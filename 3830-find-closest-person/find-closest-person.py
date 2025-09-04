@@ -6,8 +6,14 @@ class Solution(object):
         :type z: int
         :rtype: int
         """
-        p1=abs(z-x)
-        p2=abs(z-y)
+        
+
+        p1=(z-x)
+        if p1<0:
+            p1=p1*(-1)
+        p2=(z-y)
+        if p2<0:
+            p2=p2*(-1)
         if p1>p2:
             return 2
         elif (p1==p2):
